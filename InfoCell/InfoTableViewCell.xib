@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="grammar" rowHeight="129" id="KGk-i7-Jjw" customClass="InfoTableViewCell" customModule="English" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="129"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="presentsimple" translatesAutoresizingMaskIntoConstraints="NO" id="BQt-UV-R6m">
+                        <rect key="frame" x="20" y="20" width="328" height="100"/>
+                        <color key="backgroundColor" red="0.99957293270000003" green="0.35502028959999998" blue="0.90209507950000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="o9L-MX-N41"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BQt-UV-R6m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Ms5-Gt-jKX"/>
+                    <constraint firstAttribute="bottom" secondItem="BQt-UV-R6m" secondAttribute="bottom" constant="5" id="NZ0-YX-tv8"/>
+                    <constraint firstItem="BQt-UV-R6m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="UXi-2w-1jd"/>
+                    <constraint firstAttribute="trailing" secondItem="BQt-UV-R6m" secondAttribute="trailing" constant="20" id="uKR-t0-nI1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="imageInfo" destination="BQt-UV-R6m" id="luK-Id-PXM"/>
+            </connections>
+            <point key="canvasLocation" x="197.10144927536234" y="105.46875"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="presentsimple" width="3000" height="900"/>
+    </resources>
+</document>
